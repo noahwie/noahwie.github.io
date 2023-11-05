@@ -1,0 +1,148 @@
+/*general styles*/
+* {
+  font-family: Roboto, Arial;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  border: solid;
+  border-radius: 5px;
+  background-color: #e60000;
+  color:  white;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.item:hover {
+  background-color: #EEE; 
+  color: black;
+  border-color: lightgray ;
+}
+
+.content-container {
+  text-align: center;
+  background-color: #f9f9f7;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  background-color: #f9f9f7;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.img-container {
+  background-color: #f9f9f7;
+}
+
+.slider-wrapper {
+  background-color: #f9f9f7;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 30%;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  background-color: #f9f9f7;
+  
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 16px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: #f9f9f7;
+}
+
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+p {
+  background-color: #f9f9f7;
+  color: #1c1c1c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 80%;
+  font-size: 20px;
+  max-width: 70%;
+}
+
+
+
+#myBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color:  #e60000; 
+  color: white; 
+  cursor: pointer; 
+  padding: 10px 20px 10px 20px;
+  border: solid;
+  border-radius: 5px; 
+}
+
+#myBtn:hover {
+  background-color: #EEE; 
+  color: black ;
+  border-color: lightgray;
+}
